@@ -19,14 +19,26 @@ After you get the virtual environment, you can install our requirment.txt (mainl
 ```
 pip install -r requirements.txt
 ```
-Done!
+**Done!**
 
 ## Usage
 ![Method Overview](https://github.com/Neural-Symbolic-Image-Labeling/Rapid/blob/main/pipeline-1.png)
+
+We put 4 datasets on it, called ad, prof, medical and bird. You can find the json files under FOIL/data_file. These files are generated from the CV model with images as input.
+
+Before you run the code, some parts need to be chosen:
+
+1.You should choose the correct Active Learning strategy in FOIL/strategies/utils.py, in similarity_sample(*args) function, the _default should be choosed when using ad and prof dataset, the med corresponds to medical and bird for bird. **Please choose the right one before running the system.**
+
+2. You should choose the right file
+
+You can directly run our ActiveLearning/FOIL/rule_format_deamon.py to see the result!
 
 ## Contributing
 All students below contribute a lot to this work, under supervision of Prof. Tianyi Zhang from Purdue CS.
 
 Yifeng Wang, Zhi Tu, Yiwen Xiang, Shiyuan Zhou, Xiyuan Chen, Bingxuan Li
+
+If you have any questions, either about the code or paper, welcome to contact us via email!
 
 ## Citation
