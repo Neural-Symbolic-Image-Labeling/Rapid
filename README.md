@@ -1,7 +1,8 @@
 # Rapid
 This is a github repository for RAPID, a tool with neuro-symbolic learning method. Rapid combines pre-trained CV models and inductive logic learning to infer logic-based labeling rules with a small amount of labeled data.
 
-![RAPID Overview](https://raw.githubusercontent.com/hongmaju/light7Local/master/img/productShow/20170518152848.png)
+![RAPID Overview](https://github.com/Neural-Symbolic-Image-Labeling/Rapid/blob/main/teaser.png)
+
 
 ## Installation
 You should follow the instruction (https://docs.python.org/3/library/venv.html) to create a virtual environment with Python 3.10 and activate it. Here we provide an example on Windows:
@@ -19,6 +20,9 @@ After you get the virtual environment, you can install our requirment.txt (mainl
 pip install -r requirements.txt
 ```
 Done!
+
+## Usage
+![Method Overview](https://github.com/Neural-Symbolic-Image-Labeling/Rapid/blob/main/pipeline-1.png)
 
 ## Contributing
 All students below contribute a lot to this work, under supervision of Prof. Tianyi Zhang from Purdue CS.
