@@ -46,6 +46,6 @@ All students below contribute a lot to this work, under supervision of Prof. Tia
 
 Yifeng Wang, Zhi Tu, Yiwen Xiang, Shiyuan Zhou, Xiyuan Chen, Bingxuan Li
 
-If you have any questions, either about the code or paper, welcome to contact us via email!
+If you have any question, either about the code or paper, welcome to contact us via email!
 
 ## Citation
