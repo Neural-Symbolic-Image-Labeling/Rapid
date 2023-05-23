@@ -1,0 +1,269 @@
+{
+  "date": "2023-02-01 22:56:12",
+  "note": "\n    ",
+  "dataset": "/home/bx/ActiveLearning/FOIL/data_file/bird/bird_171172173_noise2.json",
+  "data_config": "/home/bx/ActiveLearning/FOIL/data_file/bird/config_bird_171172173_noise_2.json",
+  "foil_model": "bird3",
+  "num_comps": 36,
+  "max_only": true,
+  "max_comp_info": {
+    "name": "sim1_lambda6_size20",
+    "max_acc": 0.3888888888888889,
+    "seed": 88
+  },
+  "comps": [
+    {
+      "name": "sim1_lambda6_size20",
+      "seed": 88,
+      "max_acc": 0.3888888888888889,
+      "test_acc": [
+        0.16666666666666666,
+        0.16666666666666666,
+        0.19444444444444445,
+        0.2222222222222222,
+        0.19444444444444445,
+        0.19444444444444445,
+        0.19444444444444445,
+        0.3333333333333333,
+        0.19444444444444445,
+        0.3055555555555556,
+        0.2777777777777778,
+        0.2777777777777778,
+        0.2777777777777778,
+        0.3055555555555556,
+        0.2777777777777778,
+        0.2777777777777778,
+        0.2777777777777778,
+        0.3055555555555556,
+        0.3055555555555556,
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3055555555555556,
+        0.3055555555555556,
+        0.3055555555555556,
+        0.2777777777777778,
+        0.3333333333333333,
+        0.3055555555555556,
+        0.3055555555555556,
+        0.3333333333333333,
+        0.3888888888888889
+      ],
+      "init_imgs": [
+        "Nashville_Warbler_0081_167234",
+        "Nashville_Warbler_0042_167346",
+        "Orange_Crowned_Warbler_0065_167952"
+      ],
+      "hit_rates": [
+        0.0,
+        0.6666666666666666,
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333,
+        0.0,
+        0.0,
+        0.3333333333333333,
+        0.0,
+        0.0,
+        0.0,
+        0.6666666666666666,
+        0.6666666666666666,
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333,
+        0.6666666666666666,
+        0.0,
+        0.3333333333333333,
+        0.0,
+        0.0,
+        0.3333333333333333,
+        0.3333333333333333,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.3333333333333333
+      ],
+      "query_imgs": [
+        "Nashville_Warbler_0121_167078",
+        "Orange_Crowned_Warbler_0062_168119",
+        "Orange_Crowned_Warbler_0112_168437",
+        "Nashville_Warbler_0006_167497",
+        "Nashville_Warbler_0107_167186",
+        "Nashville_Warbler_0115_167039",
+        "Myrtle_Warbler_0103_166963",
+        "Nashville_Warbler_0079_167213",
+        "Orange_Crowned_Warbler_0126_168445",
+        "Myrtle_Warbler_0107_166917",
+        "Orange_Crowned_Warbler_0005_168314",
+        "Orange_Crowned_Warbler_0033_167991",
+        "Orange_Crowned_Warbler_0030_168376",
+        "Nashville_Warbler_0005_167103",
+        "Myrtle_Warbler_0094_166922",
+        "Nashville_Warbler_0103_167455",
+        "Nashville_Warbler_0020_167198",
+        "Nashville_Warbler_0129_167053",
+        "Orange_Crowned_Warbler_0113_167984",
+        "Orange_Crowned_Warbler_0120_167587",
+        "Nashville_Warbler_0001_167117",
+        "Nashville_Warbler_0004_167146",
+        "Orange_Crowned_Warbler_0015_168196",
+        "Orange_Crowned_Warbler_0007_167545",
+        "Nashville_Warbler_0028_167065",
+        "Myrtle_Warbler_0072_166702",
+        "Myrtle_Warbler_0077_166749",
+        "Orange_Crowned_Warbler_0119_167658",
+        "Nashville_Warbler_0044_167357",
+        "Myrtle_Warbler_0112_166754",
+        "Nashville_Warbler_0124_167285",
+        "Nashville_Warbler_0068_167266",
+        "Orange_Crowned_Warbler_0066_167949",
+        "Orange_Crowned_Warbler_0042_167614",
+        "Orange_Crowned_Warbler_0016_168082",
+        "Nashville_Warbler_0040_167454",
+        "Myrtle_Warbler_0050_166820",
+        "Orange_Crowned_Warbler_0037_167687",
+        "Orange_Crowned_Warbler_0001_167660",
+        "Myrtle_Warbler_0043_166708",
+        "Nashville_Warbler_0130_167101",
+        "Myrtle_Warbler_0054_166985",
+        "Myrtle_Warbler_0083_166738",
+        "Myrtle_Warbler_0005_166853",
+        "Nashville_Warbler_0050_167475",
+        "Orange_Crowned_Warbler_0094_167584",
+        "Myrtle_Warbler_0023_166764",
+        "Myrtle_Warbler_0034_166720",
+        "Myrtle_Warbler_0073_166798",
+        "Myrtle_Warbler_0008_166927",
+        "Nashville_Warbler_0027_167224",
+        "Myrtle_Warbler_0015_166713",
+        "Orange_Crowned_Warbler_0040_168029",
+        "Myrtle_Warbler_0014_166831",
+        "Nashville_Warbler_0100_167226",
+        "Nashville_Warbler_0105_167452",
+        "Nashville_Warbler_0035_167283",
+        "Myrtle_Warbler_0039_166709",
+        "Nashville_Warbler_0057_167008",
+        "Orange_Crowned_Warbler_0038_168384",
+        "Nashville_Warbler_0109_167428",
+        "Orange_Crowned_Warbler_0051_168002",
+        "Orange_Crowned_Warbler_0102_168189",
+        "Nashville_Warbler_0127_167494",
+        "Orange_Crowned_Warbler_0006_167998",
+        "Orange_Crowned_Warbler_0079_168372",
+        "Myrtle_Warbler_0074_166637",
+        "Nashville_Warbler_0054_167258",
+        "Orange_Crowned_Warbler_0103_168566",
+        "Myrtle_Warbler_0028_166905",
+        "Orange_Crowned_Warbler_0128_168012",
+        "Myrtle_Warbler_0098_166794",
+        "Nashville_Warbler_0018_167191",
+        "Myrtle_Warbler_0093_166986",
+        "Myrtle_Warbler_0047_166987",
+        "Nashville_Warbler_0128_166444",
+        "Myrtle_Warbler_0063_93378",
+        "Nashville_Warbler_0048_167071",
+        "Orange_Crowned_Warbler_0057_168424",
+        "Myrtle_Warbler_0025_166704",
+        "Orange_Crowned_Warbler_0056_167876",
+        "Orange_Crowned_Warbler_0021_168263",
+        "Myrtle_Warbler_0030_166732",
+        "Orange_Crowned_Warbler_0090_167607",
+        "Myrtle_Warbler_0036_166833",
+        "Myrtle_Warbler_0086_166926",
+        "Orange_Crowned_Warbler_0091_167578"
+      ],
+      "max_rule": {
+        "Nashville_Warbler(X)": [
+          [
+            "¬has_under_tail_color(X,blue)"
+          ],
+          [
+            "¬has_belly_color(X,blue)"
+          ],
+          [
+            "¬has_nape_color(X,grey)"
+          ],
+          [
+            "has_forehead_color(X,grey)"
+          ]
+        ],
+        "Orange_crowned_Warbler(X)": [
+          [
+            "¬has_eye_color(X,black)"
+          ],
+          [
+            "¬has_leg_color(X,black)"
+          ],
+          [
+            "¬has_bill_color(X,black)"
+          ],
+          [
+            "has_leg_color(X,blue)"
+          ],
+          [
+            "has_nape_color(X,blue)"
+          ]
+        ],
+        "Myrtle_Warbler(X)": [
+          [
+            "¬has_size(X,small_)5_-_9_in"
+          ],
+          [
+            "¬has_head_pattern(X,eyering)"
+          ],
+          [
+            "¬has_bill_color(X,black)"
+          ],
+          [
+            "¬has_forehead_color(X,grey)"
+          ],
+          [
+            "¬has_under_tail_color(X,blue)"
+          ],
+          [
+            "¬has_breast_color(X,blue)"
+          ],
+          [
+            "¬has_belly_color(X,blue)"
+          ],
+          [
+            "has_leg_color(X,black)"
+          ]
+        ]
+      },
+      "val_acc": [
+        0.08333333333333333,
+        0.25,
+        0.25,
+        0.16666666666666666,
+        0.3055555555555556,
+        0.3055555555555556,
+        0.3055555555555556,
+        0.3055555555555556,
+        0.16666666666666666,
+        0.3055555555555556,
+        0.2777777777777778,
+        0.3055555555555556,
+        0.3055555555555556,
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333,
+        0.3333333333333333,
+        0.4166666666666667,
+        0.4166666666666667,
+        0.3333333333333333,
+        0.4166666666666667,
+        0.4166666666666667,
+        0.3611111111111111,
+        0.4166666666666667,
+        0.3888888888888889,
+        0.4722222222222222,
+        0.3888888888888889,
+        0.3888888888888889,
+        0.5,
+        0.5833333333333334
+      ]
+    }
+  ]
+}
