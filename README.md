@@ -24,15 +24,22 @@ pip install -r requirements.txt
 ## Usage
 ![Method Overview](https://github.com/Neural-Symbolic-Image-Labeling/Rapid/blob/main/pipeline-1.png)
 
-We put 4 datasets on it, called ad, prof, medical and bird. You can find the json files under FOIL/data_file. These files are generated from the CV model with images as input.
+We put 4 datasets on it, called ad, prof, medical and bird, meaning Trafic Scene, Occupation, Glaucoma and Bird Species. You can find the json files under FOIL/data_file. These files are generated from the CV model with images as input.
 
 Before you run the code, some parts need to be chosen:
 
-1.You should choose the correct Active Learning strategy in FOIL/strategies/utils.py, in similarity_sample(*args) function, the _default should be choosed when using ad and prof dataset, the med corresponds to medical and bird for bird. **Please choose the right one before running the system.**
+1. You should choose the correct Active Learning (AL) strategy in FOIL/strategies/utils.py, in similarity_sample(*args) function, the _default should be choosed when using ad and prof dataset, the med corresponds to medical and bird for bird. **Please choose the right one before running the system.**
+2. You should choose the right data file for running. In ActiveLearning/FOIL/rule_format_deamon.py, for data_path and data_split_config, please choose the right json file and config file for corresponding dataset you want.
+3. You can select some initial images before training, using the id in config file. If so, you should use al_comp ManualComp to choose the initial images. If you don't want manually select, you can choose al_comp RandomComp to select randomly. Besides you need to choose rounds and instance number per round for AL. There are also different AL strategies you can use. （Add a table here to help users）
+4. Choose the correspond foil model to use. "bird1" means bird dataset and "medical" means medical dataset. Other models can be used by either ad or prof dataset.
 
-2. You should choose the right file
+Then you can directly run our ActiveLearning/FOIL/rule_format_deamon.py to see the result!
 
-You can directly run our ActiveLearning/FOIL/rule_format_deamon.py to see the result!
+When running, you can also choose manual mode (by typing "y" in terminal), which means you can change, delete and lock the rules as you want. However, you can also refuse the function if you just want the AL choose the picture and update the rules automatically. (by typing "n" in terminal)
+
+If you choose y, in each iteration, you can enter the rule and press enter to see the accuracy. If you don't want to change the rule anymore, you can enter c, it will jump to the lock and delete mode. An example for delete (lock) format on trafic scene dataset : {'downtown': [[['building'], ['building'], 0]], 'highway': [], 'mountain road': []} (This means you will delete building clause from downtown rule).
+
+**Notice**: when typing in the terminal, make sure the rules you enter is in one line, else it will raise error.
 
 ## Contributing
 All students below contribute a lot to this work, under supervision of Prof. Tianyi Zhang from Purdue CS.
