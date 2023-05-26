@@ -1,11 +1,11 @@
 # Rapid
-This is a github repository for RAPID, a tool with neuro-symbolic learning method. Rapid combines pre-trained CV models and inductive logic learning to infer logic-based labeling rules with a small amount of labeled data.
+This is an official Github repository for RAPID, a tool with neuro-symbolic learning method. Rapid combines pre-trained CV models and inductive logic learning to infer logic-based labeling rules with a small amount of labeled data. （This codebase is still under construction, and the possible finish date is xxx）
 
 ![RAPID Overview](https://github.com/Neural-Symbolic-Image-Labeling/Rapid/blob/main/teaser.png)
 
 
 ## Installation
-You should follow the instruction (https://docs.python.org/3/library/venv.html) to create a virtual environment with Python 3.10 and activate it. Here we provide an example on Windows:
+You should follow the [instruction](https://docs.python.org/3/library/venv.html) to create a virtual environment with Python 3.10 and activate it. Here we provide an example on Windows:
 1. Go to your 3.10 base
 2. Create the virtual environment (the env just for example, you can change it to the name you like)   
 ```
@@ -41,11 +41,5 @@ If you choose y, in each iteration, you can enter the rule and press enter to se
 
 **Notice**: when typing in the terminal, make sure the rules you enter is in one line, else it will raise error.
 
-## Contributing
-All students below contribute a lot to this work, under supervision of Prof. Tianyi Zhang from Purdue CS.
-
-Yifeng Wang, Zhi Tu, Yiwen Xiang, Shiyuan Zhou, Xiyuan Chen, Bingxuan Li
-
-If you have any question, either about the code or paper, welcome to contact us via email!
 
 ## Citation
