@@ -1,7 +1,7 @@
 # Rapid
 This is an official Github repository for RAPID, a tool with neuro-symbolic learning method. Rapid combines pre-trained CV models and inductive logic learning to infer logic-based labeling rules with a small amount of labeled data. （This codebase is still under construction, and the possible finish date is xxx）
 
-![RAPID Overview](https://github.com/Neural-Symbolic-Image-Labeling/Rapid/blob/main/teaser.png)
+![RAPID Overview](https://github.com/Neural-Symbolic-Image-Labeling/Rapid/blob/main/picture/teaser.png)
 
 
 ## Installation
@@ -22,7 +22,7 @@ pip install -r requirements.txt
 **Done!**
 
 ## Usage
-![Method Overview](https://github.com/Neural-Symbolic-Image-Labeling/Rapid/blob/main/pipeline-1.png)
+![Method Overview](https://github.com/Neural-Symbolic-Image-Labeling/Rapid/blob/main/picture/pipeline-1.png)
 
 We put 4 datasets on it, called ad, prof, medical and bird, meaning Trafic Scene, Occupation, Glaucoma and Bird Species. You can find the json files under FOIL/data_file. These files are generated from the CV model with images as input.
 
