@@ -5,7 +5,7 @@ This is an official Github repository for RAPID, a tool with neuro-symbolic lear
 
 
 ## Installation
-You should follow the [instruction](https://docs.python.org/3/library/venv.html) to create a virtual environment with Python 3.10 and activate it. Here we provide an example on Windows with pip (You can choose conda follow the [instruction](https://numdifftools.readthedocs.io/en/stable/how-to/create_virtual_env_with_conda.html):
+You should follow the [instruction](https://docs.python.org/3/library/venv.html) to create a virtual environment with Python 3.10 and activate it. Here we provide an example on Windows with pip (You can choose conda follow the [instruction](https://numdifftools.readthedocs.io/en/stable/how-to/create_virtual_env_with_conda.html)):
 1. Go to your 3.10 base
 2. Create the virtual environment (the env just for example, you can change it to the name you like)   
 ```
