@@ -29,11 +29,11 @@ We put 4 datasets on it, called ad, prof, medical and bird, meaning Trafic Scene
 Before you run the code, some parts need to be chosen:
 
 1. You should choose the correct Active Learning (AL) strategy in FOIL/strategies/utils.py, in similarity_sample(*args) function, the _default should be choosed when using ad and prof dataset, the med corresponds to medical and bird for bird. **Please choose the right one before running the system.**
-2. You should choose the right data file for running. In ActiveLearning/FOIL/rule_format_deamon.py, for data_path and data_split_config, please choose the right json file and config file for corresponding dataset you want.
+2. You should choose the right data file for running. In rule_format_deamon.py, for data_path and data_split_config, please choose the right json file and config file for corresponding dataset you want.
 3. You can select some initial images before training, using the id in config file. If so, you should use al_comp ManualComp to choose the initial images. If you don't want manually select, you can choose al_comp RandomComp to select randomly. Besides you need to choose rounds and instance number per round for AL. There are also different AL strategies you can use. （Add a table here to help users）
 4. Choose the correspond foil model to use. "bird1" means bird dataset and "medical" means medical dataset. Other models can be used by either ad or prof dataset.
 
-Then you can directly run our ActiveLearning/FOIL/rule_format_deamon.py to see the result!
+Then you can directly run our rule_format_deamon.py to see the result!
 
 When running, you can also choose manual mode (by typing "y" in terminal), which means you can change, delete and lock the rules as you want. However, you can also refuse the function if you just want the AL choose the picture and update the rules automatically. (by typing "n" in terminal)
 
