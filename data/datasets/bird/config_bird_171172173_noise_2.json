@@ -1,0 +1,1082 @@
+[
+  {
+    "imageId": "Myrtle_Warbler_0043_166708",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0053_167403",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0079_168372",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0037_166690",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0118_167350",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0113_167984",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0063_93378",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0044_167357",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0091_167578",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0104_166829",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0102_167195",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0057_168424",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0034_166720",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0108_167259",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0103_168566",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0094_166922",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0018_167191",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0065_167952",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0047_166987",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0020_167198",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0126_168445",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0083_166738",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0105_167452",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0015_168196",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0032_166847",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0004_167146",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0090_167607",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0023_166764",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0054_167258",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0033_167991",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0005_166853",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0127_167494",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0034_168185",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0093_166986",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0115_167039",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0042_167614",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0103_166963",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0076_167389",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0128_168012",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0008_166927",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0001_167117",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0021_168263",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0014_166831",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0100_167226",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0030_168376",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0107_166917",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0055_167331",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0040_168029",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0025_166704",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0027_167224",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0005_168314",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0020_166997",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0050_167475",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0006_167998",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0030_166732",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0079_167213",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0120_167587",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0091_166762",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0028_167065",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0001_167660",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0065_166885",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0040_167454",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0007_167545",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0015_166713",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0042_167346",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0050_168166",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0072_166702",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0103_167455",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0052_168013",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0050_166820",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0006_167497",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0094_167584",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0077_166749",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0124_167285",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0119_167658",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0073_166798",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0107_167186",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0112_168437",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0054_166985",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0121_167078",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0016_168082",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0039_166709",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0081_167234",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0056_167876",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0109_167428",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0005_167103",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0080_167960",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0086_166926",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0048_167071",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0097_168004",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0098_166794",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0068_167266",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0037_167687",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0074_166637",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0035_167283",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0102_168189",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0112_166754",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0128_166444",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0051_168002",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0045_166710",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0057_167008",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0038_168384",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0036_166833",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0130_167101",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0062_168119",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0028_166905",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0129_167053",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0066_167949",
+    "train": true,
+    "test": false,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0064_166679",
+    "train": false,
+    "test": true,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0013_167326",
+    "train": false,
+    "test": true,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0117_167987",
+    "train": false,
+    "test": true,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0059_166946",
+    "train": false,
+    "test": true,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0061_167355",
+    "train": false,
+    "test": true,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0111_168040",
+    "train": false,
+    "test": true,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0009_166752",
+    "train": false,
+    "test": true,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0023_167242",
+    "train": false,
+    "test": true,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0068_167585",
+    "train": false,
+    "test": true,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0026_166680",
+    "train": false,
+    "test": true,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0015_167429",
+    "train": false,
+    "test": true,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0027_168381",
+    "train": false,
+    "test": true,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0097_167001",
+    "train": false,
+    "test": true,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0110_167268",
+    "train": false,
+    "test": true,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0088_168052",
+    "train": false,
+    "test": true,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0061_166816",
+    "train": false,
+    "test": true,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0086_167045",
+    "train": false,
+    "test": true,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0114_167732",
+    "train": false,
+    "test": true,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0087_166783",
+    "train": false,
+    "test": true,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0060_167347",
+    "train": false,
+    "test": true,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0049_167974",
+    "train": false,
+    "test": true,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0113_166834",
+    "train": false,
+    "test": true,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0056_167123",
+    "train": false,
+    "test": true,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0018_168126",
+    "train": false,
+    "test": true,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0102_166725",
+    "train": false,
+    "test": true,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0126_167274",
+    "train": false,
+    "test": true,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0019_167626",
+    "train": false,
+    "test": true,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0101_166942",
+    "train": false,
+    "test": true,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0037_167280",
+    "train": false,
+    "test": true,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0081_167647",
+    "train": false,
+    "test": true,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0033_166727",
+    "train": false,
+    "test": true,
+    "val": false
+  },
+  {
+    "imageId": "Nashville_Warbler_0041_167534",
+    "train": false,
+    "test": true,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0009_168228",
+    "train": false,
+    "test": true,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0078_166875",
+    "train": false,
+    "test": true,
+    "val": false
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0032_167589",
+    "train": false,
+    "test": true,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0068_166892",
+    "train": false,
+    "test": true,
+    "val": false
+  },
+  {
+    "imageId": "Myrtle_Warbler_0044_166852",
+    "train": false,
+    "test": false,
+    "val": true
+  },
+  {
+    "imageId": "Nashville_Warbler_0092_167457",
+    "train": false,
+    "test": false,
+    "val": true
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0078_167964",
+    "train": false,
+    "test": false,
+    "val": true
+  },
+  {
+    "imageId": "Myrtle_Warbler_0071_166692",
+    "train": false,
+    "test": false,
+    "val": true
+  },
+  {
+    "imageId": "Nashville_Warbler_0075_167419",
+    "train": false,
+    "test": false,
+    "val": true
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0083_167948",
+    "train": false,
+    "test": false,
+    "val": true
+  },
+  {
+    "imageId": "Myrtle_Warbler_0084_166747",
+    "train": false,
+    "test": false,
+    "val": true
+  },
+  {
+    "imageId": "Nashville_Warbler_0064_167411",
+    "train": false,
+    "test": false,
+    "val": true
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0064_166929",
+    "train": false,
+    "test": false,
+    "val": true
+  },
+  {
+    "imageId": "Myrtle_Warbler_0007_166897",
+    "train": false,
+    "test": false,
+    "val": true
+  },
+  {
+    "imageId": "Nashville_Warbler_0120_167149",
+    "train": false,
+    "test": false,
+    "val": true
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0071_167595",
+    "train": false,
+    "test": false,
+    "val": true
+  },
+  {
+    "imageId": "Myrtle_Warbler_0067_166828",
+    "train": false,
+    "test": false,
+    "val": true
+  },
+  {
+    "imageId": "Nashville_Warbler_0032_167385",
+    "train": false,
+    "test": false,
+    "val": true
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0087_168439",
+    "train": false,
+    "test": false,
+    "val": true
+  },
+  {
+    "imageId": "Myrtle_Warbler_0069_166914",
+    "train": false,
+    "test": false,
+    "val": true
+  },
+  {
+    "imageId": "Nashville_Warbler_0104_167096",
+    "train": false,
+    "test": false,
+    "val": true
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0059_168259",
+    "train": false,
+    "test": false,
+    "val": true
+  },
+  {
+    "imageId": "Myrtle_Warbler_0089_166896",
+    "train": false,
+    "test": false,
+    "val": true
+  },
+  {
+    "imageId": "Nashville_Warbler_0014_167190",
+    "train": false,
+    "test": false,
+    "val": true
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0028_167641",
+    "train": false,
+    "test": false,
+    "val": true
+  },
+  {
+    "imageId": "Myrtle_Warbler_0088_166639",
+    "train": false,
+    "test": false,
+    "val": true
+  },
+  {
+    "imageId": "Nashville_Warbler_0098_167293",
+    "train": false,
+    "test": false,
+    "val": true
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0067_167588",
+    "train": false,
+    "test": false,
+    "val": true
+  },
+  {
+    "imageId": "Myrtle_Warbler_0110_166785",
+    "train": false,
+    "test": false,
+    "val": true
+  },
+  {
+    "imageId": "Nashville_Warbler_0036_167461",
+    "train": false,
+    "test": false,
+    "val": true
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0118_167640",
+    "train": false,
+    "test": false,
+    "val": true
+  },
+  {
+    "imageId": "Myrtle_Warbler_0001_166770",
+    "train": false,
+    "test": false,
+    "val": true
+  },
+  {
+    "imageId": "Nashville_Warbler_0029_167044",
+    "train": false,
+    "test": false,
+    "val": true
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0011_167615",
+    "train": false,
+    "test": false,
+    "val": true
+  },
+  {
+    "imageId": "Myrtle_Warbler_0016_166736",
+    "train": false,
+    "test": false,
+    "val": true
+  },
+  {
+    "imageId": "Nashville_Warbler_0123_167324",
+    "train": false,
+    "test": false,
+    "val": true
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0048_167610",
+    "train": false,
+    "test": false,
+    "val": true
+  },
+  {
+    "imageId": "Myrtle_Warbler_0100_166871",
+    "train": false,
+    "test": false,
+    "val": true
+  },
+  {
+    "imageId": "Nashville_Warbler_0051_167250",
+    "train": false,
+    "test": false,
+    "val": true
+  },
+  {
+    "imageId": "Orange_Crowned_Warbler_0055_168600",
+    "train": false,
+    "test": false,
+    "val": true
+  }
+]

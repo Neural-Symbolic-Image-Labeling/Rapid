@@ -267,5 +267,4 @@ def label(dict_list,rules):
     total_list=get_total_list(total_list1)
     al=AL(total_list,rules)
     labels=labeling(total_list,rules)
-    #print(labels)
     return labels,al

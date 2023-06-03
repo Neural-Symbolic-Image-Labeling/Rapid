@@ -192,10 +192,8 @@ def get_result_list(target,result_list,total_list,variable1):
                 clause=a[0]+"("+a[1]+","+"N"+")"+a[3]
                 result.append(clause)
                 mini,maxi=threshold(target,clauses,total_list,variable1)
-                if mini!=0:
-                    threshold_clause="N>"+str(mini)
-                else:
-                    threshold_clause="N<"+str(maxi)
+                #print(mini,maxi)
+                #threshold_clause=str(mini)+"<N<"+str(maxi)
                 threshold_clause="threshold(N,"+str(mini)+","+str(maxi)+")"
                 result.append(threshold_clause)
         new_result_list.append(result)
@@ -338,7 +336,7 @@ def locking(target,total_list,lock):
                                 if object1_in_image==object1_in_rule and object2_in_image==object2_in_rule:
                                     satisfy_list[position]="True"
                                     break
-                    elif a[0]=='area':
+                    elif a[0]=='num' or a[0]=='area':
                         object_in_image=[]
                         object_number=[]
                         object1_in_rule=object_in_rule[object_character.index(a[1])]
@@ -349,12 +347,18 @@ def locking(target,total_list,lock):
                                 object_number.append(b[2])
                             if b[0]==a[0]:
                                 object1_in_image=object_in_image[object_number.index(b[1])]
-                                c=re.split(r'[(|,|)]',rule[position+1])
-                                maxi=float(c[3])
-                                mini=float(c[2])
-                                if object1_in_image==object1_in_rule and mini<=float(b[2])<=maxi:
-                                    satisfy_list[position]="True"
-                                    break
+                                c=re.split(r'[<]',rule[position+1])
+                                if len(c)!=1:
+                                    maxi=float(c[1])
+                                    if object1_in_image==object1_in_rule and float(b[2])<=maxi:
+                                        satisfy_list[position]="True"
+                                        break
+                                else:
+                                    c=re.split(r'[>]',rule[position+1])
+                                    mini=float(c[1])
+                                    if object1_in_image==object1_in_rule and mini<float(b[2]):
+                                        satisfy_list[position]="True"
+                                        break
                 if "False" not in satisfy_list:
                     delete_list.append(i)
     for i,image in enumerate(new_total_list):
@@ -538,7 +542,7 @@ def foil(target_list,target,total_list,variable1,deleted,locked):
                     for predicate in pre_assign:
                         if predicate not in result_list[i]:
                             a=re.split(r'[(|,|)]',predicate)
-                            #print(a[0])
+                            print(a[0])
                             if a[0]!='num' and a[0]!='area':
                                 result_in=False
                                 break
@@ -622,8 +626,8 @@ def foil(target_list,target,total_list,variable1,deleted,locked):
         positive_list,negative_list=pos_neg_list(target,new_total_list)
         i+=1
     for rule in lock[c[0]]:
-        if (len(rule[0])==len(rule[1]) and rule[0]!=[] and rule[2]==1) or (rule[0]==[] and rule[2]==1):
-            result_list.insert(0,rule[1])
+        if len(rule[0])==len(rule[1]) and rule[0]!=[] and rule[2]==1:
+            result_list.insert(0,rule[0])
     #print(result_list)
     return result_list
 

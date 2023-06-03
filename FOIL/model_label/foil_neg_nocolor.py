@@ -146,7 +146,7 @@ def get_result_list(target,result_list,total_list,variable1,variable2):
             if len(a)==5:
                 if a[3] not in number:
                     number.append(a[3])
-            elif a[0]!="overlap" and a[0]!="num" and a[0]!="area":
+            elif a[0]!="overlap" and a[0]!="num" and a[0]!="area" and a[0]!="color":
                 if a[2] not in number:
                     number.append(a[2])
             elif a[0]=="overlap":
@@ -208,19 +208,15 @@ def get_result_list(target,result_list,total_list,variable1,variable2):
 def get_total_list1(input_list):
     total_object=[]
     total_list=[]
-    object_detection=[]
-    segmentation=[]
     for image_num in range(len(input_list)):
         for objects_num in range(len(input_list[image_num]['object_detect']['object'])):
             name=input_list[image_num]['object_detect']['object'][str(objects_num)]['name']
             if name not in total_object:
                 total_object.append(name)
-                object_detection.append(name)
         for objects_num in range(len(input_list[image_num]['panoptic_segmentation'])):
             name=input_list[image_num]['panoptic_segmentation'][str(objects_num)]['name']
             if name not in total_object:
                 total_object.append(name)
-                segmentation.append(name)
     for image_num in range(len(input_list)):
         image_list=[]
         string=input_list[image_num]['type']+"(image"+str(input_list[image_num]['imageId'])+")"
@@ -270,7 +266,7 @@ def get_total_list1(input_list):
             if overlap not in image_list:
                 image_list.append(overlap)
         total_list.append(image_list)
-    return total_list,object_detection,segmentation
+    return total_list
 
 def tfidf(target,total_list):
     pos_total_num=0
@@ -355,7 +351,7 @@ def change_total(total_list):
                 still_has.append(a[2])
                 if predicate not in new_image:
                     new_image.append(predicate)
-            elif a[0]=="num" or a[0]=="area":
+            elif a[0]=="color" or a[0]=="area":
                 if a[1] in still_has and predicate not in new_image:
                     new_image.append(predicate)
             elif a[0]=="overlap":
@@ -518,23 +514,17 @@ def cha_to_num(target,total_list,lists):
     object_list=get_object_list(total_list)
     c=re.split(r'[(|,|)]',target)
     for rules in lists[c[0]]:
-        print(rules)
         for rule in rules:
             if rule!=0 and rule!=1:
                 position=[]
                 for pos,predicate in enumerate(rule):
-                    print(rule)
-                    print(predicate)
-                    a=re.split(r'[¬|(|,|)]',predicate)
+                    a=re.split(r'[(|,|)]',predicate)
                     if len(a)==1:
                         if len(re.split(r'[<]',predicate))==1:
                             d=str(object_list.index(a[0]))
                             rule[pos]=a[0]+'('+'X'+','+d+')'+''
                         else:
                             position.append(pos)
-                    elif len(a)==2:
-                        d=str(object_list.index(a[0]))
-                        rule[pos]=a[0]+a[1]+'('+'X'+','+d+')'+''
                     elif a[0]=='overlap':
                         a[1]=str(object_list.index(a[1]))
                         a[2]=str(object_list.index(a[2]))
@@ -561,7 +551,7 @@ def foil(target_list,target,total_list,variable1,variable2,deleted,locked):     
     for label in delete:
         if delete[label]==[]:
             delete[label]==[[[],[],0]]
-    for label in lock:
+    for label in delete:
         if lock[label]==[]:
             lock[label]==[[[],[],0]]
     result_list=[]     #two dimentional list
@@ -575,7 +565,6 @@ def foil(target_list,target,total_list,variable1,variable2,deleted,locked):     
     initial_neg_length = len(negative_list)
     initial_pos_length = len(positive_list)
     i=0   #make sure that all the result in the result list has been proved that fulfill our requirements(can satisfy all the positives and reject all the negatives)
-    #start=time.time()
     while (len(positive_list)> 0.4*initial_pos_length):
         counting=0
         while (len(negative_list)> 0.4*initial_neg_length):
@@ -602,7 +591,7 @@ def foil(target_list,target,total_list,variable1,variable2,deleted,locked):     
             correct_clause=False              #first set false, if the correct one is found, jump out of the iteration
             parameter_list=get_parameter_list(result)
             #print(possible_clause)
-            #print(foil_gain_list)    
+            #print(foil_gain_list)
             while correct_clause == False:
                 for clause_number,clause_gain in enumerate(foil_gain_list):
                     if max(foil_gain_list)==-99:
@@ -651,7 +640,7 @@ def foil(target_list,target,total_list,variable1,variable2,deleted,locked):     
                     result_in=True
                     for predicate in rule[0]:
                         if predicate not in result_list[i]:
-                            a=re.split(r'[¬|(|,|)]',predicate)
+                            a=re.split(r'[(|,|)]',predicate)
                             if a[0]!='num' and a[0]!='area':
                                 result_in=False
                                 break
@@ -686,8 +675,8 @@ def foil(target_list,target,total_list,variable1,variable2,deleted,locked):     
                     result_in=True
                     for predicate in pre_assign:
                         if predicate not in result_list[i]:
-                            a=re.split(r'[¬|(|,|)]',predicate)
-                            #print(a[0])
+                            a=re.split(r'[(|,|)]',predicate)
+                            print(a[0])
                             if a[0]!='num' and a[0]!='area':
                                 result_in=False
                                 break
@@ -726,7 +715,7 @@ def foil(target_list,target,total_list,variable1,variable2,deleted,locked):     
                     result_in=True
                     for predicate in result_list[i]:
                         if predicate not in rule[0]:
-                            a=re.split(r'[¬|(|,|)]',predicate)
+                            a=re.split(r'[(|,|)]',predicate)
                             if a[0]!='num' and a[0]!='area':
                                 result_in=False
                                 break
@@ -746,7 +735,7 @@ def foil(target_list,target,total_list,variable1,variable2,deleted,locked):     
         #print(new_total_list)
         positive_list,negative_list=pos_neg_list(target,new_total_list)
         i+=1
-    '''delete_position=[]
+    delete_position=[]
     for rule in delete[c[0]]:
         if len(rule[0])==len(rule[1]) and rule[0]!=[] and rule[2]==1:
             for t,rules in enumerate(result_list):
@@ -769,10 +758,10 @@ def foil(target_list,target,total_list,variable1,variable2,deleted,locked):     
                 if result_in==True:
                     delete_position.append(t)
     for t in range(len(delete_position)):
-        del result_list[delete_position[len(delete_position)-1-t]]'''
+        del result_list[delete_position[len(delete_position)-1-t]]
     for rule in lock[c[0]]:
-        if (len(rule[0])==len(rule[1]) and rule[0]!=[] and rule[2]==1) or (rule[0]==[] and rule[2]==1):
-            result_list.insert(0,rule[1])
+        if len(rule[0])==len(rule[1]) and rule[0]!=[] and rule[2]==1:
+            result_list.insert(0,rule[0])
     return result_list
 
 def plural(word):
@@ -853,15 +842,12 @@ def NL(result_list,target,total_list):
 def neg_FOIL(input_list,deleted,locked):
     global_variable1=10
     global_variable2=30
+    #start=time.time()
     dict_math={}
     dict_nl={}
-    start=time.time()
-    total_list1,object_detection,segmentation=get_total_list1(input_list)
-    print(object_detection)
-    print(segmentation)
-    total_list=get_total_list(total_list1)
-    #total_list_new=get_total_list(total_list1)
-    #total_list=change_total(total_list_new)
+    total_list1=get_total_list1(input_list)
+    total_list_new=get_total_list(total_list1)
+    total_list=change_total(total_list_new)
     object_list=get_object_list(total_list)
     target_list=[]
     for images in total_list:
@@ -877,8 +863,6 @@ def neg_FOIL(input_list,deleted,locked):
             natural_language=NL(math_format,target,result_list)
             dict_math[target]=math_format
             dict_nl[target]=natural_language
-    end=time.time()
-    print(end-start)
-    return dict_math,dict_nl,object_detection,segmentation
+    return dict_math,dict_nl,object_list
     #end=time.time()
     #print(end-start)

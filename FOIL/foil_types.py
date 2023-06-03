@@ -2,7 +2,7 @@ from typing import Any, TypedDict
 
 class FoilXItem(TypedDict, total=False):
     """
-    Data type for each item in X. May contain more properties.
+    Data type for each item in X. May contain other properties.
     """
     imageId: int
     object_detect: dict
