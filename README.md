@@ -43,3 +43,12 @@ If you choose y, in each iteration, you can enter the rule and press enter to se
 
 
 ## Citation
+```
+@inproceedings{
+wang2023rapid,
+title={Rapid Image Labeling via Neuro-Symbolic Learning},
+author={Wang, Yifeng and Tu, Zhi and Xiang, Yiwen and Zhou, Shiyuan and Chen, Xiyuan and Li, bingxuan and Zhang, Tianyi},
+booktitle={29th SIGKDD Conference on Knowledge Discovery and Data Mining - Research Track},
+year={2023},
+}
+```
