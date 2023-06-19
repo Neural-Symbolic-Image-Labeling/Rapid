@@ -1,4 +1,4 @@
-# Rapid
+# [KDD 23] Rapid Image Labeling via Neuro-Symbolic Learning
 This is an official Github repository for RAPID, a tool with neuro-symbolic learning method. Rapid combines pre-trained CV models and inductive logic learning to infer logic-based labeling rules with a small amount of labeled data. （This codebase is still under construction, and the possible finish date is xxx）
 
 ![RAPID Overview](https://github.com/Neural-Symbolic-Image-Labeling/Rapid/blob/main/picture/teaser.png)
