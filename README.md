@@ -1,13 +1,13 @@
 # [KDD 23] Rapid Image Labeling via Neuro-Symbolic Learning
 This is the official Github repository for ``[Rapid Image Labeling via Neuro-Symbolic Learning](https://arxiv.org/abs/2306.10490)'' (KDD2023 Acceptance). 
 
-RAPID is a tool with neuro-symbolic learning method. Rapid combines pre-trained CV models and inductive logic learning to infer logic-based labeling rules with a small amount of labeled data. （This codebase is still under construction, and the possible finish date is xxx）
+RAPID is a tool with a neuro-symbolic learning method. Rapid combines pre-trained CV models and inductive logic learning to infer logic-based labeling rules with a small amount of labeled data. Please look into our [dataset](https://purdue.box.com/v/rapid-kdd-2023) here.
 
 ![RAPID Overview](https://github.com/Neural-Symbolic-Image-Labeling/Rapid/blob/main/picture/teaser.png)
 
 
 ## Installation
-You should follow the [instruction](https://docs.python.org/3/library/venv.html) to create a virtual environment with Python 3.10 and activate it. Here we provide an example on Windows with pip (You can choose conda follow the [instruction](https://numdifftools.readthedocs.io/en/stable/how-to/create_virtual_env_with_conda.html)):
+You should follow the [instruction](https://docs.python.org/3/library/venv.html) to create a virtual environment with Python 3.10 and activate it. Here we provide an example on Windows with pip (You can choose conda following the [instruction](https://numdifftools.readthedocs.io/en/stable/how-to/create_virtual_env_with_conda.html)):
 1. Go to your 3.10 base
 2. Create the virtual environment (the env just for example, you can change it to the name you like)   
 ```
