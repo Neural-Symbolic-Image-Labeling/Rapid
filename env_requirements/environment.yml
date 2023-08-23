@@ -1,64 +1,64 @@
-name: Rapid
+name: alenv
 channels:
   - defaults
 dependencies:
-  - _libgcc_mutex=0.1=main
-  - _openmp_mutex=5.1=1_gnu
-  - bzip2=1.0.8=h7b6447c_0
-  - ca-certificates=2023.01.10=h06a4308_0
-  - ld_impl_linux-64=2.38=h1181459_1
-  - libffi=3.4.4=h6a678d5_0
-  - libgcc-ng=11.2.0=h1234567_1
-  - libgomp=11.2.0=h1234567_1
-  - libstdcxx-ng=11.2.0=h1234567_1
-  - libuuid=1.41.5=h5eee18b_0
-  - ncurses=6.4=h6a678d5_0
-  - openssl=1.1.1t=h7f8727e_0
-  - pip=23.0.1=py310h06a4308_0
-  - python=3.10.11=h7a1cb2a_2
-  - readline=8.2=h5eee18b_0
-  - setuptools=67.8.0=py310h06a4308_0
-  - sqlite=3.41.2=h5eee18b_0
-  - tk=8.6.12=h1ccaba5_0
-  - tzdata=2023c=h04d1e81_0
-  - wheel=0.38.4=py310h06a4308_0
-  - xz=5.4.2=h5eee18b_0
-  - zlib=1.2.13=h5eee18b_0
+  # - _libgcc_mutex=0.1
+  # - _openmp_mutex=5.1
+  # - bzip2=1.0.8
+  # - ca-certificates=2023.01.10
+  # - ld_impl_linux-64=2.38
+  # - libffi=3.4.4
+  # - libgcc-ng=11.2.0
+  # - libgomp=11.2.0
+  # - libstdcxx-ng=11.2.0
+  # - libuuid=1.41.5
+  # - ncurses=6.4
+  # - openssl=1.1.1t
+  - pip=23.0.1
+  - python=3.10.11
+  # - readline=8.2
+  - setuptools=67.8.0
+  # - sqlite=3.41.2
+  # - tk=8.6.12
+  # - tzdata=2023c
+  - wheel=0.38.4
+  # - xz=5.4.2
+  # - zlib=1.2.13
   - pip:
-      - autopep8==1.7.0
-      - certifi==2022.6.15
-      - charset-normalizer==2.1.0
-      - click==8.1.3
-      - colorama==0.4.5
-      - cycler==0.11.0
-      - fonttools==4.34.4
-      - idna==3.3
-      - install==1.3.5
-      - joblib==1.1.0
-      - jycm==1.3.0
-      - kiwisolver==1.4.4
-      - matplotlib==3.5.2
-      - modal-python==0.4.2.1
-      - numpy==1.23.1
-      - packaging==21.3
-      - panda==0.3.1
-      - pandas==1.4.3
-      - pillow==9.2.0
-      - pycodestyle==2.9.1
-      - pymongo==4.2.0
-      - pyparsing==3.0.9
-      - python-dateutil==2.8.2
-      - pytz==2022.1
-      - requests==2.28.1
-      - scikit-learn==1.1.2
-      - scipy==1.9.0
-      - six==1.16.0
-      - skorch==0.9.0
-      - tabulate==0.8.10
-      - threadpoolctl==3.1.0
-      - toml==0.10.2
-      - tqdm==4.64.0
-      - typing-extensions==4.3.0
-      - urllib3==1.26.11
-      - wcwidth==0.2.5
+    - autopep8==1.7.0
+    - certifi==2022.6.15
+    - charset-normalizer==2.1.0
+    - click==8.1.3
+    - colorama==0.4.5
+    - cycler==0.11.0
+    - fonttools==4.34.4
+    - idna==3.3
+    - install==1.3.5
+    - joblib==1.1.0
+    - jycm==1.3.0
+    - kiwisolver==1.4.4
+    - matplotlib==3.5.2
+    - modal-python==0.4.2.1
+    - numpy==1.23.1
+    - packaging==21.3
+    - panda==0.3.1
+    - pandas==1.4.3
+    - pillow==9.2.0
+    - pycodestyle==2.9.1
+    - pymongo==4.2.0
+    - pyparsing==3.0.9
+    - python-dateutil==2.8.2
+    - pytz==2022.1
+    - requests==2.28.1
+    - scikit-learn==1.1.2
+    - scipy==1.9.0
+    - six==1.16.0
+    - skorch==0.9.0
+    - tabulate==0.8.10
+    - threadpoolctl==3.1.0
+    - toml==0.10.2
+    - tqdm==4.64.0
+    - typing-extensions==4.3.0
+    - urllib3==1.26.11
+    - wcwidth==0.2.5
 prefix: /home/ubuntu/miniconda3/envs/alenv
