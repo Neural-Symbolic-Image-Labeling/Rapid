@@ -1,5 +1,5 @@
 from modAL import ActiveLearner
-from al.combinationstrategy import strategy_factory
+from algo_capsule import strategy_factory
 from foil.foil_model import FoilImageClassifier
 # Medical
 from foil.model_label.medical_foil_for_vscode import FOIL as med_foil
@@ -9,7 +9,6 @@ from foil.model_label.medical_label_for_vscode import label as med_label
 # Default
 
 defualt_strategy = strategy_factory(sim_mode=1, lambda_mode=6, m=50)
-
 
 def query(al_type, X_init, X_pool, n_instances=10, strategy=defualt_strategy, **kwargs):
     """ Query data from X_pool.
@@ -31,12 +30,15 @@ def query(al_type, X_init, X_pool, n_instances=10, strategy=defualt_strategy, **
     if al_type == 'Medical':
         fn_FOIL = med_foil
         fn_label = med_label
+        strategy = strategy_factory(sim_mode=1, lambda_mode=6, m=50, type='Medical')
     elif al_type == 'Bird':
         #TODO
-        pass
+        strategy = strategy_factory(sim_mode=1, lambda_mode=6, m=50, type='Bird')
+        
     elif al_type == 'Default':
         #TODO
-        pass
+        strategy = strategy_factory(sim_mode=1, lambda_mode=6, m=50)
+        
     else:
         raise NotImplementedError
     
