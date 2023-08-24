@@ -10,11 +10,12 @@ from foil.model_label.medical_label_for_vscode import label as med_label
 
 defualt_strategy = strategy_factory(sim_mode=1, lambda_mode=6, m=50)
 
-def query(al_type, X_init, X_pool, n_instances=10, strategy=defualt_strategy, **kwargs):
+def query(al_type, X_init, y_init, X_pool, n_instances=10, strategy=defualt_strategy, **kwargs):
     """ Query data from X_pool.
     
     @param al_type: str, type of active learning(Default | Medical | Bird).
     @param X_init: list, initial data, aka the already labeled data.
+    @param y_init: list, labels of X_init.
     @param X_pool: list, unlabeled data.
     @param n_instances: int, number of instances to query.
     @param strategy: str, query strategy function.
@@ -46,7 +47,7 @@ def query(al_type, X_init, X_pool, n_instances=10, strategy=defualt_strategy, **
     learner = ActiveLearner(
         estimator=model,
         query_strategy = strategy,
-        X_training=X_init, y_training=[],
+        X_training=X_init, y_training=y_init,
     )
     
     # Query data
