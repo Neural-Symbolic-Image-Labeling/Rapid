@@ -1,6 +1,7 @@
 from modAL import ActiveLearner
 from algo_capsule import strategy_factory
 from foil.foil_model import FoilImageClassifier
+import numpy as np
 # Medical
 from foil.model_label.medical_foil_for_vscode import FOIL as med_foil
 from foil.model_label.medical_label_for_vscode import label as med_label
@@ -47,7 +48,7 @@ def query(al_type, X_init, y_init, X_pool, n_instances=10, strategy=defualt_stra
     learner = ActiveLearner(
         estimator=model,
         query_strategy = strategy,
-        X_training=X_init, y_training=y_init,
+        X_training=np.array(X_init), y_training=np.array(y_init),
     )
     
     # Query data
