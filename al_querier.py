@@ -31,10 +31,10 @@ def query(al_type, X_init, y_init, X_pool, n_instances=10, strategy=defualt_stra
     if al_type == 'Medical':
         fn_FOIL = med_foil
         fn_label = med_label
-        strategy = strategy_factory(sim_mode=1, lambda_mode=6, m=50, type='Medical')
+        strategy = strategy_factory(sim_mode=1, lambda_mode=6, m=50, al_type='Medical')
     elif al_type == 'Bird':
         #TODO
-        strategy = strategy_factory(sim_mode=1, lambda_mode=6, m=50, type='Bird')
+        strategy = strategy_factory(sim_mode=1, lambda_mode=6, m=50, al_type='Bird')
         
     elif al_type == 'Default':
         #TODO
@@ -55,3 +55,19 @@ def query(al_type, X_init, y_init, X_pool, n_instances=10, strategy=defualt_stra
     query_ids = [x['imageId'] for x in query_items]
     
     return query_ids, query_items
+
+if __name__ == '__main__':
+    import random
+    import numpy as np
+    from data.data_loader import ClassificationDataManager
+    data_parser = ClassificationDataManager()
+    X_train, X_test, X_val, y_train, y_test, y_val = data_parser.split_data("F:\GitHub_Repos\Rapid\data\datasets\medical\medical.json", "F:\GitHub_Repos\Rapid\data\datasets\medical\config_medical.json", task="medical")
+    X_train = np.array(X_train)
+    y_train = np.array(y_train)
+    init_idx = random.sample(range(len(X_train)), 10)
+    X_initial = X_train[init_idx]
+    y_inital = y_train[init_idx]
+    X_pool = np.delete(X_train, init_idx, axis=0)
+    
+    print(query('Medical', X_initial, y_inital, X_pool, n_instances=8)[0])
+    

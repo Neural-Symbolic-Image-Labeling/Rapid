@@ -4,15 +4,15 @@ from foil.foil_model import FoilBase
 from foil.foil_types import FoilX
 
 """ Similarity """
-def similarity_sample(type, *args):
-    if isinstance(type, str):
-        if type == 'bird':
+def similarity_sample(al_type, *args):
+    if isinstance(al_type, str):
+        if al_type == 'Bird':
             # print("Using bird similarity")
             return similarity_sample_bird(*args)
-        elif type == 'default':
+        elif al_type == 'Default':
             # print("Using default similarity")
             return similarity_sample_default(*args)
-        elif type == 'med':
+        elif al_type == 'Medical':
             # print("Using med similarity")
             return similarity_sample_med(*args)
     raise NotImplementedError
@@ -342,16 +342,16 @@ def measure_informativeness_certain(X, sample):
 """ End of informativeness """
 
 """ Diversity """
-def diversity_sampling_strategy_global(classifier, X, test, type, n_instances=1):
+def diversity_sampling_strategy_global(classifier, X, test, al_type, n_instances=1):
 
     # Global Consideration
     centroids = np.random.choice(range(len(X)), size=n_instances, replace=False)
-    changed, newCentroids = Update_cen(X, centroids, n_instances, test, classifier, type=type)
+    changed, newCentroids = Update_cen(X, centroids, n_instances, test, classifier, al_type)
     while changed > 0:
-        changed, newCentroids = Update_cen(X, newCentroids, n_instances, test, classifier)
+        changed, newCentroids = Update_cen(X, newCentroids, n_instances, test, classifier, al_type)
     centroids = newCentroids
     cluster = []
-    dis = Distance(X, centroids, n_instances, test, classifier, type=type)
+    dis = Distance(X, centroids, n_instances, test, classifier, al_type)
     maxIndex = np.argmax(dis, axis=1)
     for i in range(n_instances):
         cluster.append([])
@@ -362,13 +362,13 @@ def diversity_sampling_strategy_global(classifier, X, test, type, n_instances=1)
 
 
 # Helper
-def Distance(dataSet, centroids, k, test, estimator: FoilBase, type) -> np.array:
+def Distance(dataSet, centroids, k, test, estimator: FoilBase, al_type) -> np.array:
     dis = []
     for idex, sample in enumerate(dataSet):
         cent_sim = []
         for cent in centroids:
             if idex != cent:
-                cent_sim.append(similarity_sample(sample, dataSet[cent], test, estimator, type=type))
+                cent_sim.append(similarity_sample(al_type, sample, dataSet[cent], test, estimator))
             else:
                 cent_sim.append(9999)
         dis.append(np.array(cent_sim))
@@ -376,8 +376,8 @@ def Distance(dataSet, centroids, k, test, estimator: FoilBase, type) -> np.array
     return dis
 
 
-def Update_cen(dataSet, centroids, k, test, estimator: FoilBase, type):
-    distance = Distance(dataSet, centroids, k, test, estimator, type=type)
+def Update_cen(dataSet, centroids, k, test, estimator: FoilBase, al_type):
+    distance = Distance(dataSet, centroids, k, test, estimator, al_type=al_type)
     maxIndex = np.argmax(distance, axis=1)
     cluster = []
     for i in range(k):
@@ -390,7 +390,7 @@ def Update_cen(dataSet, centroids, k, test, estimator: FoilBase, type):
         for sample in cluster[i]:
             sam_sum = 0
             for other_sam in cluster[i]:
-                sam_sum += similarity_sample(dataSet[sample], dataSet[other_sam], test, estimator, type=type)
+                sam_sum += similarity_sample(al_type, dataSet[sample], dataSet[other_sam], test, estimator)
             sam_sum_lst.append(sam_sum)
         index_lst = [cluster[i][j] for j, value in enumerate(sam_sum_lst) if value == max(sam_sum_lst)]
         # print("index_lst", index_lst)
@@ -404,7 +404,7 @@ def Update_cen(dataSet, centroids, k, test, estimator: FoilBase, type):
 
     # changed = newCentroids - centroids
     changed = 0
-    # print(type(centroids))
+    # print(al_type(centroids))
     for cen in newCentroids:
         if cen not in centroids:
             changed += 1
@@ -414,7 +414,7 @@ def Update_cen(dataSet, centroids, k, test, estimator: FoilBase, type):
 """ End of diversity """
 
 """ Factory method for creating strategies."""
-def strategy_factory(sim_mode, lambda_mode, m, type="Default"):
+def strategy_factory(sim_mode, lambda_mode, m, al_type="Default"):
     def strat(classifier, X, n_instances):
         # intermediate set m
         interm_idx, interm_set = informativeness_query_strategy_2(lambda_mode, classifier, X, n_instances=m)
@@ -422,7 +422,7 @@ def strategy_factory(sim_mode, lambda_mode, m, type="Default"):
         cent = []
         centx = None
         while n != 0:
-            a, b = diversity_sampling_strategy_global(classifier.estimator, interm_set, sim_mode, n, type=type)
+            a, b = diversity_sampling_strategy_global(classifier.estimator, interm_set, sim_mode, al_type, n)
             interm_set = np.delete(interm_set, a, axis=0)
             cent.extend(a)
             if not centx:
@@ -437,14 +437,14 @@ def strategy_factory(sim_mode, lambda_mode, m, type="Default"):
     return strat
 
 
-def diversity_factory(sim_mode, type='Default'):
+def diversity_factory(sim_mode, al_type='Default'):
     def diversity(classifier, X, n_instances):
         X_use = np.copy(X)
         n = n_instances
         cent = []
         centx = None
         while n != 0:
-            a, b = diversity_sampling_strategy_global(classifier.estimator, X_use, sim_mode, n, type=type)
+            a, b = diversity_sampling_strategy_global(classifier.estimator, X_use, sim_mode, n, al_type=al_type)
             X_use = np.delete(X_use, a, axis=0)
             cent.extend(a)
             if not centx:
