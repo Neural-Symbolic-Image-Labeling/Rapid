@@ -1,7 +1,7 @@
 # [KDD 23] Rapid Image Labeling via Neuro-Symbolic Learning
 This is the official Github repository for ``[Rapid Image Labeling via Neuro-Symbolic Learning](https://arxiv.org/abs/2306.10490)'' (KDD2023 Acceptance). 
 
-RAPID is a tool with a neuro-symbolic learning method. Rapid combines pre-trained CV models and inductive logic learning to infer logic-based labeling rules with a small amount of labeled data. Please look into our [dataset](https://drive.google.com/drive/folders/1gBw0Rn2MfhCbzPZxCVuIld-DmALN9bPA?usp=share_link) here.
+RAPID is a tool with a neuro-symbolic learning method. Rapid combines pre-trained CV models and inductive logic learning to infer logic-based labeling rules with a small amount of labeled data. Please look into our [dataset](https://drive.google.com/drive/folders/1gBw0Rn2MfhCbzPZxCVuIld-DmALN9bPA?usp=share_link) here. We recommand you to directly use the json data in our data/datasets file, which are generated from the CV model with images as input.
 
 ![RAPID Overview](https://github.com/Neural-Symbolic-Image-Labeling/Rapid/blob/main/picture/teaser.png)
 
@@ -28,12 +28,12 @@ pip install -r requirements.txt
 
 We put 4 datasets on it, called ad, prof, medical and bird, meaning Trafic Scene, Occupation, Glaucoma and Bird Species. You can find the json files under FOIL/data_file. These files are generated from the CV model with images as input.
 
-Before you run the code, some parts need to be chosen:
+Before you run the code, please check the config.py file first:
 
-1. You should choose the correct Active Learning (AL) strategy in FOIL/strategies/utils.py, in similarity_sample(*args) function, the _default should be choosed when using ad and prof dataset, the med corresponds to medical and bird for bird. **Please choose the right one before running the system.**
-2. You should choose the right data file for running. In rule_format_deamon.py, for data_path and data_split_config, please choose the right json file and config file for corresponding dataset you want.
-3. You can select some initial images before training, using the id in config file. If so, you should use al_comp ManualComp to choose the initial images. If you don't want manually select, you can choose al_comp RandomComp to select randomly. Besides you need to choose rounds and instance number per round for AL. There are also different AL strategies you can use. （Add a table here to help users）
-4. Choose the correspond foil model to use. "bird1" means bird dataset and "medical" means medical dataset. Other models can be used by either ad or prof dataset.
+1. You should choose the correct Foil model in line foil_model: str =, the _default should be choosed when using ad and prof dataset, the med corresponds to medical and bird for bird. **Please choose the right one before running the system.**
+2. You should choose the right data file for running. In config.py, for data_path and data_split_config, please choose the right json file and config file for corresponding dataset you want.
+<!--3. You can select some initial images before training, using the id in config file. If so, you should use al_comp ManualComp to choose the initial images. If you don't want manually select, you can choose al_comp RandomComp to select randomly. Besides you need to choose rounds and instance number per round for AL. There are also different AL strategies you can use. （Add a table here to help users）-->
+
 
 Then you can directly run our rule_format_deamon.py to see the result!
 
