@@ -250,21 +250,6 @@ def compare_tuple(str1, str2, mode):
 
 
 if __name__ == '__main__':
-    # data_parser = ClassificationDataManager()
-    # X, X_unlabeled, y = data_parser.get_data_from_file(filename='data_med')
-    # # data1 = X[1]
-    # # data2 = X[1]
-    # # for key in data1['object_detect']['space']:
-    # #     print(f"{data1['object_detect']['space'][key]}              {data2['object_detect']['space'][key]}\n")
-    # # print(f"Similarity: {similarity_sample_med(data1, data2)}")
-    # result = []
-    # for i in range(len(X)):
-    #     for j in range(i + 1, len(X)):
-    #         result.append(similarity_sample(X[i], X[j]))
-    # # find least 10 similar
-    # pivot_index = np.argpartition(result, 10)[10]
-    # pivot = result[pivot_index]
-    
     # # Extract the 10 least numbers from the list
     # least_numbers = [num for num in result if num < pivot][:10]
     # print(least_numbers)
